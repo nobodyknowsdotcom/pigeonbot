@@ -1,0 +1,20 @@
+server:
+  port: 8080
+
+app:
+  bot:
+    name: name
+    token: token
+    schedule: 0 0 10 * * *
+  hotline-account: plzdonthackme
+
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  hibernate:
+    ddl-auto: none
+  datasource:
+    url: jdbc:postgresql://localhost:5432/pigeonbot
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
